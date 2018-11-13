@@ -21,6 +21,10 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
+            loader: 'px2rem-loader',
+              options: {
+                remUnit: 75
+            }
           }
           // other vue-loader options go here
         }

@@ -5,6 +5,7 @@ import ElementUI from 'element-ui';
 import App from './App.vue';
 import Home from './Home.vue';
 import Side from './Side.vue';
+import 'lib-flexible';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
