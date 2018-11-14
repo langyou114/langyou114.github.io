@@ -13,17 +13,28 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'vue-style-loader',
-          'css-loader'
+          {
+            loader: 'vue-style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 50
+            }
+          }
         ],
-      },      {
+      },      
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
             loader: 'px2rem-loader',
               options: {
-                remUnit: 75
+                remUnit: 50
             }
           }
           // other vue-loader options go here

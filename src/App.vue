@@ -5,7 +5,6 @@
         主页
       </router-link>
     </div>
-    <router-view name="Side" class="side"/>
     <router-view name="Home" class="home"/>
   </div>
 </template>
@@ -28,13 +27,11 @@ export default {
   width: 30%;
   float: left;
   position: relative;
-  border:salmon solid 1px;
 }
 .home {
-  width: 68%;
-  float: left;
+  width: 90%;  
+  margin: 0 auto;
   position: relative;
-  border: #42b983 solid 1px;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -58,7 +55,9 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-
+body {
+  text-align: center;
+}
 a {
   color: #42b983;
 }
