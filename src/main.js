@@ -1,28 +1,15 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import VueRouter from 'vue-router';
-import ElementUI from 'element-ui';
-import App from './App.vue';
-import Home from './Home.vue';
-import Side from './Side.vue';
-import 'lib-flexible';
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import App from './App'
+import router from './router'
 
-Vue.use(Vuex);
-Vue.use(VueRouter);
-Vue.use(ElementUI);
-let router = new VueRouter({
-  routes:[
-    {
-      path: '/home',
-      components: {
-        Home: Home,
-        Side: Side
-      }
-    }
-  ]
-})
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  render: h => h(App),
-  router
+  router,
+  components: { App },
+  template: '<App/>'
 })
